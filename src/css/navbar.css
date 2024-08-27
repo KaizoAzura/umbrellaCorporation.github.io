@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Oswald:wght@200..700&display=swap");
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+}
+
+.btn-primary {
+  background-color: #c80000;
+  color: #ffffff;
+  border-radius: 0;
+  border: 0;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  background: linear-gradient(90deg, #c80000, #8d0000, #c80000);
+  transition: 0.3s;
+}
+.btn-primary:focus {
+  background: linear-gradient(90deg, #c80000, #8d0000, #c80000);
+}
+
+.navbar {
+  background-color: #000000;
+}
+.navbar .navbar-brand {
+  font-family: "Creepster", sans-serif;
+  color: #ffffff;
+}
+.navbar .navbar-toggler {
+  border: 0;
+  color: #ffffff;
+  font-size: 1.5rem;
+  border-radius: 0;
+}
+.navbar .navbar-toggler:focus {
+  background-color: #c80000;
+  color: #ffffff;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+}
+.navbar .navbar-toggler:hover {
+  background-color: #c80000;
+}
+.navbar .btn-primary {
+  font-size: 1.2rem;
+}
+.navbar .btn-primary span {
+  font-size: 0.9rem;
+}
+.navbar .offcanvas {
+  background: linear-gradient(90deg, #000000, #000000, rgba(0, 0, 0, 0.6549019608)), url(../../../dist/bg-offcanvas.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  width: 100%;
+}
+.navbar .offcanvas .offcanvas-header .offcanvas-title {
+  font-size: 1.5rem;
+  font-family: "Creepster", sans-serif;
+  color: #ffffff;
+}
+.navbar .offcanvas .offcanvas-body .navbar-nav .nav-item .nav-link {
+  color: inherit;
+  font-weight: 300;
+  font-size: 1.25rem;
+}
+.navbar .offcanvas .offcanvas-body .navbar-nav .nav-item .nav-link i {
+  color: #c80000;
+}
+.navbar .offcanvas .offcanvas-body .navbar-nav .nav-item .nav-link:hover {
+  color: #c80000;
+  width: -moz-max-content;
+  width: max-content;
+}
+.navbar .offcanvas .offcanvas-body .navbar-nav .nav-item label {
+  font-size: 1.25rem;
+}
+.navbar .offcanvas .offcanvas-body .navbar-nav .nav-item #language-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 1px solid #a7a7a7;
+  border-radius: none;
+  padding: 0.5rem 2rem;
+  width: 100%;
+  border-radius: 0;
+  color: #a7a7a7;
+}
+.navbar .offcanvas .offcanvas-body .navbar-nav .nav-item #language-select:focus {
+  box-shadow: none;
+  outline: none;
+  border: 1px solid #a7a7a7;
+}
+.navbar .offcanvas .offcanvas-body .navbar-nav .nav-item #language-select option {
+  background-color: transparent;
+  color: #000000;
+  border: 1px solid #a7a7a7;
+}/*# sourceMappingURL=navbar.css.map */

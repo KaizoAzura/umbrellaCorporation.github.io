@@ -1,0 +1,27 @@
+@import '../variable/variable';
+
+// style
+
+.btn{
+    display: flex;
+    align-items: center;
+
+}
+
+
+.btn-primary{
+    background-color: $primary-color;
+    color: $white-color;
+    border-radius: 0;
+    border: 0;
+    transition: .3s;
+
+    &:hover{
+        background: linear-gradient(90deg, $primary-color, $primary-color-hover, $primary-color);
+        transition: .3s;
+    }
+
+    &:focus{
+        background: linear-gradient(90deg, $primary-color, $primary-color-hover, $primary-color);
+    }
+}
