@@ -68,7 +68,7 @@ body {
   font-size: 0.9rem;
 }
 .navbar .offcanvas {
-  background: linear-gradient(90deg, #000000, #000000, rgba(0, 0, 0, 0.6549019608)), url(../../../dist/bg-offcanvas.jpg);
+  background: linear-gradient(90deg, #000000, #000000, rgba(0, 0, 0, 0.6549019608)), url('../../../dist/bg-offcanvas.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
