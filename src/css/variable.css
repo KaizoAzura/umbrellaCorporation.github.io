@@ -1,6 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Creepster&family=Oswald:wght@200..700&display=swap");
 body {
   font-family: "Oswald", sans-serif;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.8666666667), #000000), url("../../../dist/bg.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  body {
+    background-image: linear-gradient(90deg, #000000, rgba(0, 0, 0, 0.8666666667)), url("../../../dist/bg.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    width: 100%;
+  }
 }
 
 * {

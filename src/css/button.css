@@ -1,6 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Oswald:wght@200..700&display=swap");
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.8666666667), #000000), url("../../../dist/bg.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  body {
+    background-image: linear-gradient(90deg, #000000, rgba(0, 0, 0, 0.8666666667)), url("../../../dist/bg.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    width: 100%;
+  }
 }
 
 * {
@@ -11,6 +27,7 @@ body {
 .btn {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .btn-primary {
@@ -26,4 +43,17 @@ body {
 }
 .btn-primary:focus {
   background: linear-gradient(90deg, #c80000, #8d0000, #c80000);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid #a7a7a7;
+  border-radius: 0;
+  color: #a7a7a7;
+}
+.btn-secondary:hover {
+  font-size: 105%;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
 }/*# sourceMappingURL=button.css.map */

@@ -8,10 +8,54 @@ $white-color : #ffffff;
 $black-color : #000000;
 $grey-color : #a7a7a7;
 
+// Breakpoints
+$breakpoint-xs: 425px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1440px;
+
+@mixin respond-to($breakpoint) {
+    @if $breakpoint == xs {
+        @media (min-width: $breakpoint-xs) { @content; }
+    }
+    @else if $breakpoint == sm {
+        @media (min-width: $breakpoint-sm) { @content; }
+    }
+    @else if $breakpoint == md {
+        @media (min-width: $breakpoint-md) { @content; }
+    }
+    @else if $breakpoint == lg {
+        @media (min-width: $breakpoint-lg) { @content; }
+    }
+    @else if $breakpoint == xl {
+        @media (min-width: $breakpoint-xl) { @content; }
+    }
+    @else if $breakpoint == xxl {
+        @media (min-width: $breakpoint-xxl) { @content; }
+    }
+}
+
 // base style
 
 body{
     font-family: "Oswald", sans-serif;
+    background-image: radial-gradient(circle, #000000dd, $black-color) ,url("../../../dist/bg.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    width: 100%;
+
+    @include respond-to('md'){
+        background-image: linear-gradient(90deg, $black-color, #000000dd) ,url("../../../dist/bg.gif");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: left;
+        width: 100%;
+    }
 }
 
 *{

@@ -2,6 +2,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Creepster&family=Oswald:wght@200..700&display=swap");
 body {
   font-family: "Oswald", sans-serif;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.8666666667), #000000), url("../../../dist/bg.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  body {
+    background-image: linear-gradient(90deg, #000000, rgba(0, 0, 0, 0.8666666667)), url("../../../dist/bg.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    width: 100%;
+  }
 }
 
 * {
@@ -11,6 +27,22 @@ body {
 
 body {
   font-family: "Oswald", sans-serif;
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.8666666667), #000000), url("../../../dist/bg.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  body {
+    background-image: linear-gradient(90deg, #000000, rgba(0, 0, 0, 0.8666666667)), url("../../../dist/bg.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left;
+    width: 100%;
+  }
 }
 
 * {
@@ -21,6 +53,7 @@ body {
 .btn {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .btn-primary {
@@ -38,6 +71,19 @@ body {
   background: linear-gradient(90deg, #c80000, #8d0000, #c80000);
 }
 
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid #a7a7a7;
+  border-radius: 0;
+  color: #a7a7a7;
+}
+.btn-secondary:hover {
+  font-size: 105%;
+  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
 .navbar {
   background-color: #000000;
 }
@@ -50,6 +96,7 @@ body {
   color: #ffffff;
   font-size: 1.5rem;
   border-radius: 0;
+  transition: 0.5s ease-in-out;
 }
 .navbar .navbar-toggler:focus {
   background-color: #c80000;
@@ -60,6 +107,7 @@ body {
 }
 .navbar .navbar-toggler:hover {
   background-color: #c80000;
+  transition: 0.5s ease-in-out;
 }
 .navbar .btn-primary {
   font-size: 1.2rem;
@@ -68,7 +116,7 @@ body {
   font-size: 0.9rem;
 }
 .navbar .offcanvas {
-  background: linear-gradient(90deg, #000000, #000000, rgba(0, 0, 0, 0.6549019608)), url(../../../dist/bg-offcanvas.jpg);
+  background: linear-gradient(90deg, #000000, rgba(0, 0, 0, 0.6549019608), #000000), url("../../../dist/bg-offcanvas.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -79,6 +127,9 @@ body {
   font-size: 1.5rem;
   font-family: "Creepster", sans-serif;
   color: #ffffff;
+}
+.navbar .offcanvas .offcanvas-body::-webkit-scrollbar {
+  display: none;
 }
 .navbar .offcanvas .offcanvas-body .navbar-nav .nav-item .nav-link {
   color: inherit;
@@ -108,6 +159,16 @@ body {
   border-radius: 0;
   color: #a7a7a7;
 }
+@media (min-width: 768px) {
+  .navbar .offcanvas .offcanvas-body .navbar-nav .nav-item #language-select {
+    padding: 0.5rem 4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar .offcanvas .offcanvas-body .navbar-nav .nav-item #language-select {
+    padding: 0.5rem 6rem;
+  }
+}
 .navbar .offcanvas .offcanvas-body .navbar-nav .nav-item #language-select:focus {
   box-shadow: none;
   outline: none;
@@ -117,4 +178,31 @@ body {
   background-color: transparent;
   color: #000000;
   border: 1px solid #a7a7a7;
+  width: -moz-max-content;
+  width: max-content;
+}
+.navbar .offcanvas .offcanvas-body .navbar-nav .nav-item .social-media {
+  font-size: 1.2rem;
+}
+.navbar .offcanvas .offcanvas-body .navbar-nav .nav-item .social-media .btn-secondary:hover {
+  font-size: 90%;
+}
+@media (min-width: 768px) {
+  .navbar .offcanvas .offcanvas-body .navbar-nav .nav-item .social-media .btn-secondary {
+    width: 100%;
+  }
+}
+.navbar .offcanvas .offcanvas-body .navbar-nav .nav-item .social-media span {
+  display: none;
+  font-size: 0.9rem;
+}
+@media (min-width: 768px) {
+  .navbar .offcanvas .offcanvas-body .navbar-nav .nav-item .social-media span {
+    display: flex;
+  }
+}
+.navbar .offcanvas .offcanvas-body .navbar-nav .nav-item .motto {
+  font-family: "Creepster", sans-serif;
+  font-size: 3rem;
+  width: 75%;
 }/*# sourceMappingURL=navbar.css.map */

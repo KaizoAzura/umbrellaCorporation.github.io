@@ -15,6 +15,7 @@
         color: $white-color;
         font-size: 1.5rem;
         border-radius: 0;
+        transition: .5s ease-in-out;
 
         &:focus{
             background-color: $primary-color;
@@ -26,6 +27,7 @@
 
         &:hover{
             background-color: $primary-color;
+            transition: .5s ease-in-out;
         }
     }
     .btn-primary{
@@ -39,7 +41,7 @@
     // offcanvas
 
     .offcanvas{
-        background: linear-gradient(90deg, $black-color,$black-color, #000000a7) ,url('../../../dist/bg-offcanvas.jpg');
+        background: linear-gradient(90deg, $black-color, #000000a7,$black-color) ,url('../../../dist/bg-offcanvas.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -55,6 +57,9 @@
         }
 
         .offcanvas-body{
+            &::-webkit-scrollbar{
+                display: none;
+            }
             .navbar-nav{
                 .nav-item{
                     .nav-link{
@@ -88,6 +93,14 @@
                         border-radius: 0;
                         color: $grey-color;
 
+                        @include respond-to('md'){
+                            padding: .5rem 4rem;
+                        }
+
+                        @include respond-to('xl'){
+                            padding: .5rem 6rem;
+                        }
+
                         &:focus{
                             box-shadow: none;
                             outline: none;
@@ -98,8 +111,41 @@
                             background-color: transparent;
                             color: $black-color;
                             border: 1px solid $grey-color;
+                            width: max-content;
                         }
                       }
+
+                    //  social media
+
+                        .social-media{
+                            font-size: 1.2rem;
+
+                            .btn-secondary{
+
+                                &:hover{
+                                    font-size: 90%;
+                                }
+
+                                @include respond-to('md'){
+                                    width: 100%;
+                                }
+                            }
+
+                            span{
+                                display: none;
+                                font-size: .9rem;
+
+                                @include respond-to('md'){
+                                    display: flex;
+                                }
+                            }
+                        }
+
+                        .motto{
+                            font-family: "Creepster", sans-serif;
+                            font-size: 3rem;
+                            width: 75%;
+                        }
                 }
             }
         }
