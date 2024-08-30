@@ -116,7 +116,11 @@ body {
   font-size: 0.9rem;
 }
 .navbar .offcanvas {
+<<<<<<< HEAD
   background: linear-gradient(90deg, #000000, rgba(0, 0, 0, 0.6549019608), #000000), url("../../../dist/bg-offcanvas.jpg");
+=======
+  background: linear-gradient(90deg, #000000, #000000, rgba(0, 0, 0, 0.6549019608)), url('../../../dist/bg-offcanvas.jpg');
+>>>>>>> 409b5062cf88a25b958086bb1b475f63424f1ea6
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -178,6 +182,7 @@ body {
   background-color: transparent;
   color: #000000;
   border: 1px solid #a7a7a7;
+<<<<<<< HEAD
   width: -moz-max-content;
   width: max-content;
 }
@@ -206,3 +211,6 @@ body {
   font-size: 3rem;
   width: 75%;
 }/*# sourceMappingURL=navbar.css.map */
+=======
+}/*# sourceMappingURL=navbar.css.map */
+>>>>>>> 409b5062cf88a25b958086bb1b475f63424f1ea6
